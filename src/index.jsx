@@ -4,12 +4,11 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 import { storeAppState } from "./redux/store";
 
-
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter basename="/films/" >
-    <Provider store={storeAppState}>
-      <App/>
-    </Provider>
-  </BrowserRouter>
+  <Provider store={storeAppState}>
+    <BrowserRouter basename="/films/">
+      <App />
+    </BrowserRouter>
+  </Provider>
 );

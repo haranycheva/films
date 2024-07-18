@@ -1,5 +1,3 @@
-
-
 import { GlobalStyled } from "../../GlobalStyle.styled";
 import { Layout } from "../Layout/Layout";
 import { CardsList } from "../genres/CardsList/CardsList";
@@ -11,7 +9,6 @@ import { Route, Routes } from "react-router-dom";
 export function App() {
   return (
     <>
-      <GlobalStyled />
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
@@ -22,6 +19,7 @@ export function App() {
           <Route path="*" element={<div>404 ERROR</div>} />
         </Route>
       </Routes>
+      <GlobalStyled />
     </>
   );
 }
