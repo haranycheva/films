@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={storeAppState}>
-      <HashRouter basename="/films/">
+      <HashRouter >
         <App />
       </HashRouter>
     </Provider>
